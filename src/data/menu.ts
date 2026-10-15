@@ -48,10 +48,10 @@ export const menu: MenuItem[] = [
  item('flan','Flan','sobremesas','Um final doce para a sua refeição.',flan),
  item('heineken','Heineken','bebidas','Consulte as opções e apresentações disponíveis.',beer),
  item('caipiroska','Caipiroska','bebidas','Consulte os sabores disponíveis na casa.',drink),
- item('churros','Combo Churros','combos','Consulte a composição e o valor no cardápio de delivery.',churros),
- item('super','Super Econômicas','combos','Consulte a composição e o valor no cardápio de delivery.',superCombo),
- item('gaucho','Combo Gaúcho','combos','Consulte a composição e o valor no cardápio de delivery.',gaucho),
- item('economico','Combo Econômico','combos','Consulte a composição e o valor no cardápio de delivery.',economico),
- ...['Casal','Premium','Estância','Família'].map((name,i)=>item(`combo-${i}`,`Combo ${name}`,'combos','Consulte a composição e o valor no cardápio de delivery.',[economico,gaucho,superCombo,churros][i] ?? economico)),
+ item('churros','Combo Churros','combos','Peça pelo WhatsApp e consulte a composição e o valor.',churros),
+ item('super','Super Econômicas','combos','Peça pelo WhatsApp e consulte a composição e o valor.',superCombo),
+ item('gaucho','Combo Gaúcho','combos','Peça pelo WhatsApp e consulte a composição e o valor.',gaucho),
+ item('economico','Combo Econômico','combos','Peça pelo WhatsApp e consulte a composição e o valor.',economico),
+ ...['Casal','Premium','Estância','Família'].map((name,i)=>item(`combo-${i}`,`Combo ${name}`,'combos','Peça pelo WhatsApp e consulte a composição e o valor.',[economico,gaucho,superCombo,churros][i] ?? economico)),
 ];
 export const normalize = (value:string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
