@@ -24,3 +24,11 @@
 .hours-list{list-style:none;padding:0;margin:0;width:100%;font-size:12px}.hours-list li{display:flex;justify-content:space-between;gap:12px;padding:4px 0;border-bottom:1px solid var(--border)}
 .order-form{display:grid;gap:12px;margin-top:8px}.order-form label{display:grid;gap:6px;font-size:12px}.order-form input,.order-form textarea,.order-form select{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px;color:var(--foreground)}.order-form .segmented{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media(max-width:767px){.hero-shade{background:linear-gradient(0deg,var(--background),oklch(0.13 0.015 45 / .72) 45%,oklch(0.13 0.015 45 / .6))}.hero .location-label{justify-content:center}.hero .location-label span{display:none}}
+
+.search-field{flex-direction:row!important}
+.item-sheet>button,.category-sheet>button{width:44px;height:44px;padding:0;display:flex;align-items:center;justify-content:center;aspect-ratio:1;z-index:5}
+.product-photo img,.item-detail-photo{object-fit:contain}
+.item-detail-photo{height:auto;aspect-ratio:1;max-height:380px;background:var(--elevated)}
+p{text-wrap:pretty}.section-title p,.hero-copy>p,.reservation-band p{text-wrap:balance}
+@media(min-width:1001px){.menu-grid{display:flex;flex-wrap:wrap;justify-content:center}.menu-grid>.product-card{width:calc((100% - 48px)/3)}}
+@media(max-width:767px){.menu-grid .product-photo{aspect-ratio:1;min-height:0;align-self:center}}

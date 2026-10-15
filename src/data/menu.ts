@@ -14,6 +14,10 @@ import cupim from '@/assets/cupim.webp';
 import file from '@/assets/file-nata.webp';
 import empanada from '@/assets/empanada.webp';
 import flan from '@/assets/flan.webp';
+import comboCasal from '@/assets/combo-casal.jpg';
+import comboPremium from '@/assets/combo-premium.jpg';
+import comboEstancia from '@/assets/combo-estancia.jpg';
+import comboFamilia from '@/assets/combo-familia.jpg';
 import beer from '@/assets/heineken.webp';
 import drink from '@/assets/caipiroska.webp';
 import churros from '@/assets/combo-churros.webp';
@@ -45,13 +49,13 @@ export const menu: MenuItem[] = [
  item('cupim','Cupim ao Alho','pratos','Cupim com o sabor marcante do alho.',cupim),
  item('file','Filé ao Molho de Nata','pratos','Filé acompanhado de um cremoso molho de nata.',file),
  item('empanada','Empanada','entradas','Uma entrada para começar a sua experiência.',empanada),
- item('flan','Flan','sobremesas','Um final doce para a sua refeição.',flan),
+ item('flan','Pudim de Leite','sobremesas','Pudim de leite condensado com calda de caramelo.',flan),
  item('heineken','Heineken','bebidas','Consulte as opções e apresentações disponíveis.',beer),
  item('caipiroska','Caipiroska','bebidas','Consulte os sabores disponíveis na casa.',drink),
  item('churros','Combo Churros','combos','Peça pelo WhatsApp e consulte a composição e o valor.',churros),
  item('super','Super Econômicas','combos','Peça pelo WhatsApp e consulte a composição e o valor.',superCombo),
  item('gaucho','Combo Gaúcho','combos','Peça pelo WhatsApp e consulte a composição e o valor.',gaucho),
  item('economico','Combo Econômico','combos','Peça pelo WhatsApp e consulte a composição e o valor.',economico),
- ...['Casal','Premium','Estância','Família'].map((name,i)=>item(`combo-${i}`,`Combo ${name}`,'combos','Peça pelo WhatsApp e consulte a composição e o valor.',[economico,gaucho,superCombo,churros][i] ?? economico)),
+ ...['Casal','Premium','Estância','Família'].map((name,i)=>item(`combo-${i}`,`Combo ${name}`,'combos','Peça pelo WhatsApp e consulte a composição e o valor.',[comboCasal,comboPremium,comboEstancia,comboFamilia][i] ?? economico)),
 ];
 export const normalize = (value:string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
