@@ -1,0 +1,14 @@
+# Confirmações antes de publicar
+- Número oficial do WhatsApp de pedidos e reservas (não assumir que o telefone fixo é WhatsApp).
+- Logo oficial: apresentação provisória em texto; ícone provisório derivado da inicial.
+- Horários de almoço e jantar por dia: Google e Anota AI divergem. Não há status aberto/fechado.
+- Todos os preços, tamanhos, composição dos combos e sabores de calzones. Não foram inventados preços.
+- Valores de self-service e rodízio; a referência promocional R$69,99 não está publicada.
+- Nome completo da pizza de costela e Morangonoffe.
+- Pix e regras de entrega.
+- Fotografias geradas são ilustrativas, incluindo o salão; substituir por fotos reais aprovadas pelo dono.
+- Nota 4,5 e 1.090 avaliações vêm do material enviado, referência 14/10/2026, não de leitura atual do Google.
+- Sem conexão Google Maps disponível para consulta direta: endereço/telefone/serviços vêm do briefing e das capturas enviadas.
+- Cardápio externo permanece responsável pelo fechamento do pedido. Carrinho próprio não ativo sem WhatsApp.
+- Instalação com manifest e instruções; sem service worker para evitar preços desatualizados. Suporte offline não implementado.
+- QR Code usa a origem atual: imprimir somente na versão publicada.
