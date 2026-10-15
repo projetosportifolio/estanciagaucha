@@ -26,7 +26,7 @@ export { almoco, rodizio };
 export interface MenuItem { id: string; name: string; category: string; description: string; image: string; price: number | null; tag?: string; sizes?: { name: string; price: number }[]; }
 export const categories = [{id:'experiencias',name:'Na nossa casa',icon:'utensils'}, {id:'salgadas',name:'Pizzas salgadas',icon:'pizza'}, {id:'doces',name:'Pizzas doces',icon:'cake'}, {id:'pratos',name:'Pratos',icon:'beef'}, {id:'entradas',name:'Entradas',icon:'utensils'}, {id:'sobremesas',name:'Sobremesas',icon:'cake'}, {id:'bebidas',name:'Bebidas',icon:'wine'}, {id:'combos',name:'Combos',icon:'package'}];
 // CONFIRMAR COM O DONO: todos os preços, tamanhos e nomes truncados. Imagens ilustrativas geradas.
-const item = (id:string,name:string,category:string,description:string,image:string,tag?:string):MenuItem => ({id,name,category,description,image,price:null,tag});
+const item = (id:string,name:string,category:string,description:string,image:string,tag?:string):MenuItem => ({id,name,category,description,image,price:null,...(tag ? {tag} : {})});
 export const menu: MenuItem[] = [
  item('almoco','Self-service','experiencias','Buffet variado no almoço, para montar o prato do seu jeito.',almoco,'Almoço'),
  item('rodizio','Rodízio','experiencias','Pizzas doces e salgadas, churrasco e boa companhia à mesa.',rodizio,'Jantar'),
